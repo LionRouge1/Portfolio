@@ -29,12 +29,12 @@ header {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  color: #6070FF;
-  border: solid 2px #6070FF;
+  color: #6070ff;
+  border: solid 2px #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 header > img {
@@ -42,7 +42,7 @@ header > img {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
 }
 
 main {
@@ -67,7 +67,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .about > a {
