@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -12,16 +13,18 @@ header {
   top: 44px;
   bottom: 0;
 }
+
 .icon {
   width: 100px;
   height: 40px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   left: 12px;
   display: flex;
   align-items: center;
   text-align: center;
   padding: 10px 12px 10px 12px;
 }
+
 .icon > p {
   font-weight: bold;
   font-size: 18px;
@@ -33,6 +36,7 @@ header {
   flex-grow: 0;
   margin: 0px 0px;
 }
+
 header > img {
   padding: 8px;
   width: 40px;
@@ -40,6 +44,7 @@ header > img {
   right: 24px;
   top: calc(50% - 40px/2);
 }
+
 main {
   position: absolute;
   top: 104px;
@@ -48,31 +53,35 @@ main {
   background-size: cover;
   padding: 20px;
 }
+
 .about > h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  color: #172B4D;
-  margin: 12px 0px;
+  color: #172b4d;
+  margin: 12px 0;
 }
+
 .about > p {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin: 12px 0px;
 }
+
 .about > a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 8px;
+  margin: 0 8px;
   text-decoration: none;
 }
+
 .social_media {
   position: static;
   min-width: 193.17px;
@@ -84,8 +93,9 @@ main {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
-.social_media>img {
+
+.social_media > img {
   margin: 10px;
 }
