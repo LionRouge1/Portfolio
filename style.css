@@ -42,7 +42,7 @@ nav {
   justify-content: space-between;
 }
 
-nav > img {
+.tonav {
   padding: 8px;
   width: 40px;
   height: 40px;
@@ -50,6 +50,10 @@ nav > img {
   top: calc(50% - 40px / 2);
 }
 
+.tonav > i {
+  color: #6070ff;
+  font-size: 30px;
+}
 main {
   position: absolute;
   top: 104px;
