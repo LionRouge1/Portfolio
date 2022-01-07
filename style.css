@@ -6,8 +6,6 @@
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   left: 0;
   right: 0;
   top: 44px;
@@ -25,19 +23,26 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
-.icon > p {
+.icon > a {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  border: solid 2px #6070ff;
+  text-decoration: none;
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0 0;
 }
 
-header > img {
+nav {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > img {
   padding: 8px;
   width: 40px;
   height: 40px;
@@ -96,6 +101,7 @@ main {
   margin: 12px 0;
 }
 
-.social_media > img {
+.social_media > li {
   margin: 10px;
+  list-style: none;
 }
