@@ -4,7 +4,7 @@
 
 > One paragraph statement about the project.
 
-![screenshot](images/screenshot_portfolio.png)
+![screenshot](images/Screenshot_portfolio.png)
 
 Setup and mobile version skeloton
 
