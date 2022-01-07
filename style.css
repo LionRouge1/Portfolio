@@ -56,12 +56,40 @@ nav {
 }
 
 main {
-  position: absolute;
+  background-color: #dfe1e6;
+}
+
+.about {
   top: 104px;
+  background-color: white;
+  border: 1px solid #dfe1e6;
   background-image: url("images/header-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: none;
+  height: 490px;
   padding: 20px;
+  border-radius: 0 0 0 65px;
+}
+
+section {
+  display: block;
+  background-color: white;
+  border: 2px solid #dfe1e6;
+  border-radius: 20px;
+  margin: 100px 20px;
+  padding: 20px;
+}
+
+article > h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 10px 0;
 }
 
 .about > h1 {
@@ -109,4 +137,86 @@ main {
 .social_media > li {
   margin: 10px;
   list-style: none;
+}
+
+.snapshoot {
+  width: inherit;
+  height: 220px;
+  display: block;
+}
+
+.snapshoot > img {
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  width: 236px;
+  height: 32px;
+  display: grid;
+  margin: 10px 0;
+  align-items: center;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.frame > p,
+.frame > h2 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.frame > h2 {
+  color: #344563;
+}
+
+.frame > div {
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.text > p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.lang {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 4px;
+  width: 203px;
+  height: 24px;
+  margin: 20px 0;
+}
+
+.lang > p {
+  height: inherit;
+  display: grid;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  width: 124px;
+  height: 48px;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
 }
