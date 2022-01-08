@@ -29,6 +29,17 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
+section > a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
 .icon > a {
   font-weight: bold;
   font-size: 18px;
@@ -107,17 +118,6 @@ section > p {
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
-}
-
-section > a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-decoration: none;
 }
 
 .social_media {
@@ -235,9 +235,11 @@ button {
   grid-row-gap: 10px;
   margin: 10px 0;
 }
-.tags{
+
+.tags {
   border-bottom: none;
 }
+
 .container-lan {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -365,6 +367,7 @@ input[type="submit"] {
   margin: auto;
   border-radius: 50px;
 }
+
 footer {
   margin-top: 100px;
   background-color: white;
