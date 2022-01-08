@@ -3,6 +3,11 @@
   font-style: normal;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfe1e6;
 }
 
 header {
@@ -10,6 +15,7 @@ header {
   right: 0;
   top: 44px;
   bottom: 0;
+  background-color: white;
 }
 
 .icon {
@@ -52,26 +58,21 @@ nav {
 
 .tonav > i {
   color: #6070ff;
-  font-size: 30px;
-}
-
-main {
-  background-color: #dfe1e6;
+  font-size: 24px;
 }
 
 .about {
-  top: 104px;
   background-color: white;
   border: 1px solid #dfe1e6;
   background-image: url("images/header-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   border-top: none;
-  height: 490px;
+  height: 590px;
   padding: 20px;
-  border-radius: 0 0 0 65px;
+  border-radius: 0 0 0 70px;
+  padding-top: 104px;
 }
 
 section {
@@ -92,7 +93,7 @@ article > h1 {
   margin: 10px 0;
 }
 
-.about > h1 {
+section > h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -101,14 +102,14 @@ article > h1 {
   margin: 12px 0;
 }
 
-.about > p {
+section > p {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
 }
 
-.about > a {
+section > a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -116,7 +117,6 @@ article > h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 8px;
   text-decoration: none;
 }
 
@@ -188,10 +188,10 @@ article > h1 {
 .lang {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 4px;
+  grid-column-gap: 8px;
   width: 203px;
   height: 24px;
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 
 .lang > p {
@@ -199,13 +199,13 @@ article > h1 {
   display: grid;
   background-color: #ebebff;
   color: #6070ff;
-  border-radius: 10px;
+  border-radius: 8px;
   align-items: center;
   text-align: center;
 }
 
 button {
-  width: 124px;
+  padding: 10px;
   height: 48px;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
@@ -219,4 +219,154 @@ button {
   letter-spacing: 0.03em;
   color: #396df2;
   background-color: white;
+  margin: 20px 0;
+}
+
+.lan-tle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f7f7f9;
+}
+
+.toggle {
+  display: grid;
+  grid-template-rows: 66px 66px 66px;
+  grid-row-gap: 10px;
+  margin: 10px 0;
+}
+.tags{
+  border-bottom: none;
+}
+.container-lan {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 327px;
+}
+
+.lan-tle > h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.lan-tle > i {
+  font-weight: 500;
+  font-size: 27px;
+  color: #5e6c84;
+}
+
+.lan {
+  display: grid;
+  padding: 0 10px;
+  grid-template-columns: 62px auto;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.lan > p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.Fabout {
+  padding: 20px;
+  padding-top: 100px;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  border-radius: 0 70px 0 0;
+}
+
+.contact {
+  padding: 20px;
+  padding-top: 80px;
+  background-color: #6070ff;
+  background-image: url("images/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  border-radius: 70px 0 0 0;
+}
+
+.txt {
+  width: 327px;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.txt > h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 20px;
+  line-height: 52px;
+}
+
+.txt > p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form {
+  display: block;
+  width: 100%;
+  padding: 5%;
+}
+
+input {
+  width: 90%;
+  height: 48px;
+  margin: 10px 0;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+textarea {
+  width: 90%;
+  margin: 10px 0;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: white;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  min-width: 120px;
+}
+
+.line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  margin: auto;
+  border-radius: 50px;
+}
+footer {
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 0 70px 0 0;
 }
