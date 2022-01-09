@@ -1,12 +1,12 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins;
   font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+main {
   background-color: #dfe1e6;
 }
 
@@ -78,6 +78,9 @@ nav {
   background-image: url("images/header-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
+  border: 2px solid #dfe1e6;
+  border-radius: 20px;
   margin: 0;
   border-top: none;
   height: 590px;
@@ -86,7 +89,7 @@ nav {
   padding-top: 104px;
 }
 
-section {
+.snap_container > article {
   display: block;
   background-color: white;
   border: 2px solid #dfe1e6;
@@ -95,7 +98,7 @@ section {
   padding: 20px;
 }
 
-article > h1 {
+article > h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -104,7 +107,8 @@ article > h1 {
   margin: 10px 0;
 }
 
-section > h1 {
+section > h1,
+section > h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -139,6 +143,11 @@ section > p {
   list-style: none;
 }
 
+.social_media i {
+  color: #505f79;
+  font-size: 21px;
+}
+
 .snapshoot {
   width: inherit;
   height: 220px;
@@ -160,14 +169,14 @@ section > p {
 }
 
 .frame > p,
-.frame > h2 {
+.frame > h4 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
 }
 
-.frame > h2 {
+.frame > h4 {
   color: #344563;
 }
 
@@ -194,7 +203,7 @@ section > p {
   margin: 20px 0 5px 0;
 }
 
-.lang > p {
+.lang > li {
   height: inherit;
   display: grid;
   background-color: #ebebff;
@@ -202,6 +211,7 @@ section > p {
   border-radius: 8px;
   align-items: center;
   text-align: center;
+  list-style: none;
 }
 
 button {
@@ -220,6 +230,23 @@ button {
   color: #396df2;
   background-color: white;
   margin: 20px 0;
+}
+
+button:hover{
+  background-color: #6070ff;
+  color: white;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+button:disabled {
+  border: 1px solid #5e6c84;
+  color: #5e6c84;
+}
+
+button:active {
+  background-color: #2230d2;
+  box-shadow: none;
+  color: white;
 }
 
 .lan-tle {
@@ -246,7 +273,7 @@ button {
   width: 327px;
 }
 
-.lan-tle > h2 {
+.lan-tle > h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -301,7 +328,6 @@ button {
 }
 
 .txt {
-  width: 327px;
   color: white;
   margin: 20px;
   padding: 10px;
@@ -369,7 +395,6 @@ input[type="submit"] {
 }
 
 footer {
-  margin-top: 100px;
   background-color: white;
   border-radius: 0 70px 0 0;
 }
