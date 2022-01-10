@@ -230,6 +230,15 @@ button {
   margin: 20px 0;
 }
 
+input[type="submit"] {
+  width: 30%;
+  background-color: white;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  min-width: 120px;
+}
+
 button:hover,
 input[type="submit"]:hover {
   background-color: #6070ff;
@@ -376,15 +385,6 @@ textarea {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
-}
-
-input[type="submit"] {
-  width: 30%;
-  background-color: white;
-  color: #6070ff;
-  font-size: 17px;
-  line-height: 24px;
-  min-width: 120px;
 }
 
 .line {
