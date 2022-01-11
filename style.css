@@ -29,6 +29,11 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
+
 section > a {
   font-weight: 500;
   font-size: 16px;
@@ -78,7 +83,6 @@ nav {
   background-image: url("images/header-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
   margin: 0;
   border-top: none;
   height: 590px;
@@ -87,12 +91,15 @@ nav {
   padding-top: 104px;
 }
 
+.snap_container {
+  margin: 50px 0;
+}
+
 .snap_container > article {
-  display: block;
   background-color: white;
   border: 2px solid #dfe1e6;
   border-radius: 20px;
-  margin: 100px 20px;
+  margin: 50px 20px;
   padding: 20px;
 }
 
@@ -115,7 +122,8 @@ section > h2 {
   margin: 12px 0;
 }
 
-section > p {
+section > p,
+section > h3 {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -215,6 +223,7 @@ section > p {
 button {
   padding: 10px;
   height: 48px;
+  max-width: 162px;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   box-sizing: border-box;
@@ -395,7 +404,3 @@ textarea {
   border-radius: 50px;
 }
 
-footer {
-  background-color: white;
-  border-radius: 0 70px 0 0;
-}
