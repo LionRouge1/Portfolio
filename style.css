@@ -201,7 +201,6 @@ section > h3 {
 }
 
 .lang {
-  display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 8px;
   width: 203px;
@@ -211,7 +210,7 @@ section > h3 {
 
 .lang > li {
   height: inherit;
-  display: grid;
+  float: left;
   background-color: #ebebff;
   color: #6070ff;
   border-radius: 8px;
