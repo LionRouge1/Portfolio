@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -7,15 +9,19 @@
 }
 
 main {
-  background-color: #dfe1e6;
+  background-color: rgba(223, 225, 230, 0.5);
+  width: 100%;
 }
 
 header {
-  left: 0;
-  right: 0;
-  top: 44px;
-  bottom: 0;
   background-color: white;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .icon {
@@ -34,10 +40,13 @@ section {
   flex-direction: column;
 }
 
-section > a {
+.content > a,
+.left_block > a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  display: inline-block;
+  margin-top: 10px;
   color: #7f8cff;
   flex: none;
   order: 0;
@@ -57,11 +66,8 @@ section > a {
   margin: 0 0;
 }
 
-nav {
-  width: 100%;
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
+nav ul {
+  display: none;
 }
 
 .tonav {
@@ -80,9 +86,11 @@ nav {
 .about {
   background-color: white;
   border: 1px solid #dfe1e6;
-  background-image: url("images/header-shapes.png");
+  background-image: url("../images/header-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  top: 45px;
   margin: 0;
   border-top: none;
   height: 590px;
@@ -103,7 +111,7 @@ nav {
   padding: 20px;
 }
 
-article > h3 {
+.left_block > h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -112,8 +120,8 @@ article > h3 {
   margin: 10px 0;
 }
 
-section > h1,
-section > h2 {
+section h1,
+.left_block > h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -122,8 +130,8 @@ section > h2 {
   margin: 12px 0;
 }
 
-section > p,
-section > h3 {
+section p,
+.left_block > h3 {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -163,6 +171,10 @@ section > h3 {
 .snapshoot > img {
   width: 100%;
   height: 100%;
+}
+
+.snapshoot > .Dtop {
+  display: none;
 }
 
 .frame {
@@ -218,6 +230,10 @@ section > h3 {
   align-items: center;
   text-align: center;
   list-style: none;
+}
+
+.lang .ruby {
+  display: none;
 }
 
 button {
@@ -337,7 +353,7 @@ input[type="submit"]:active {
   padding: 20px;
   padding-top: 80px;
   background-color: #6070ff;
-  background-image: url("images/contact.png");
+  background-image: url("../images/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 0;
