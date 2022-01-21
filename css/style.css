@@ -33,6 +33,12 @@ header {
   align-items: center;
   text-align: center;
   padding: 10px 12px 10px 12px;
+  animation: rotation 2s linear forwards;
+}
+
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
 section {
@@ -253,6 +259,7 @@ button {
   color: #396df2;
   background-color: white;
   margin: 20px 0;
+  transition: all 1s;
 }
 
 input[type="submit"] {
@@ -262,6 +269,7 @@ input[type="submit"] {
   font-size: 17px;
   line-height: 24px;
   min-width: 120px;
+  transition: all 1s;
 }
 
 button:hover,

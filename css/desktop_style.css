@@ -7,6 +7,80 @@
     padding: 0 142px;
   }
 
+  .icon {
+    position: relative;
+  }
+
+  .icon::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+
+  .icon:hover::before {
+    animation: animate 1s linear forwards;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0;
+      height: 0;
+      border-color: #7f8cff transparent transparent transparent;
+    }
+
+    50% {
+      width: 100%;
+      height: 0;
+      border-color: #7f8cff #7f8cff transparent transparent;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+      border-color: #7f8cff #7f8cff transparent transparent;
+    }
+  }
+
+  .icon::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+
+  .icon:hover::after {
+    animation: animates 1s linear forwards;
+  }
+
+  @keyframes animates {
+    0% {
+      width: 0;
+      height: 0;
+      border-color: transparent transparent transparent #7f8cff;
+    }
+
+    50% {
+      width: 0;
+      height: 100%;
+      border-color: transparent transparent #7f8cff #7f8cff;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+      border-color: transparent transparent #7f8cff #7f8cff;
+    }
+  }
+
   nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -118,8 +192,12 @@
 
   .snapshoot > .Dtop {
     display: block;
+    transition: transform 0.3s ease-in-out;
   }
-
+  
+  .Dtop:hover {
+    transform: scale(1.05);
+  }
   .left_block > h3 {
     font-size: 40px;
     line-height: 52px;
@@ -164,6 +242,11 @@
   .lan {
     grid-template-rows: 62px auto;
     grid-template-columns: auto;
+    transition: transform 0.2s ease-out;
+  }
+
+  .lan:hover {
+    transform: translateY(-3px);
   }
 
   .container-lan > .lan-tle {
@@ -208,6 +291,12 @@
     border-radius: 0;
     color: #172b4d;
     outline: none;
+    transition: padding 1s ease-in-out;
+    position: relative;
+  }
+  
+  input:hover {
+    padding-left: 20px;
   }
 
   textarea {
