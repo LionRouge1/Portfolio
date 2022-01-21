@@ -194,10 +194,11 @@
     display: block;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .Dtop:hover {
     transform: scale(1.05);
   }
+
   .left_block > h3 {
     font-size: 40px;
     line-height: 52px;
@@ -294,7 +295,7 @@
     transition: padding 1s ease-in-out;
     position: relative;
   }
-  
+
   input:hover {
     padding-left: 20px;
   }
