@@ -36,6 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 - Website: [@My Portfolio](https://lionrouge1.github.io/Portfolio/)
+- My portfolio: [@Portfolio](https://lionrouge1.github.io/Portfolio/)
 
 👤 **Author1**
 
