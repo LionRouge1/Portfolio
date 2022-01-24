@@ -1,4 +1,4 @@
-![Site](https://lionrouge1.github.io/Portfolio/)
+![](https://github.com/LionRouge1/Portfolio.git)
 
 # Portfolio
 
@@ -35,6 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Authors
+- Website: (https://lionrouge1.github.io/Portfolio/)
 
 👤 **Author1**
 
