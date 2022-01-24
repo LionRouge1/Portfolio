@@ -1,4 +1,4 @@
-![](https://github.com/LionRouge1/Portfolio.git)
+![](https://lionrouge1.github.io/Portfolio/)
 
 # Portfolio
 
