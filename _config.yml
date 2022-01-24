@@ -2,3 +2,13 @@ theme: jekyll-theme-cayman
 layout: page
 title: "Matchoudi's portfolio"
 permalink: https://github.com/LionRouge1/Portfolio/edit/main
+lsi: false
+safe: true
+source: [https://github.com/LionRouge1/Portfolio/edit/main]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
