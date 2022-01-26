@@ -15,7 +15,7 @@ main {
 
 header {
   background-color: white;
-  height: 45px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -25,14 +25,16 @@ header {
 }
 
 .icon {
-  width: 100px;
-  height: 40px;
-  top: calc(50% - 40px / 2);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #5263ff;
+  text-decoration: none;
+  min-width: 100px;
   left: 12px;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 10px 12px 10px 12px;
   animation: rotation 2s linear forwards;
 }
 
@@ -53,23 +55,11 @@ section {
   line-height: 24px;
   display: inline-block;
   margin-top: 10px;
-  color: #7f8cff;
+  color: #5263ff;
   flex: none;
   order: 0;
   flex-grow: 0;
   text-decoration: none;
-}
-
-.icon > a {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-  text-decoration: none;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
 }
 
 nav ul {
@@ -99,7 +89,8 @@ nav ul {
   top: 45px;
   margin: 0;
   border-top: none;
-  height: 590px;
+  height: inherit;
+  min-height: 590px;
   padding: 20px;
   border-radius: 0 0 0 70px;
   padding-top: 104px;
@@ -185,7 +176,8 @@ section p,
 
 .frame {
   width: 236px;
-  height: 32px;
+  height: inherit;
+  min-height: 32px;
   display: grid;
   margin: 10px 0;
   align-items: center;
@@ -197,7 +189,7 @@ section p,
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #69778c;
 }
 
 .frame > h3 {
@@ -223,7 +215,8 @@ section p,
   grid-template-columns: auto auto auto;
   grid-column-gap: 8px;
   width: 203px;
-  height: 24px;
+  height: inherit;
+  min-height: 24px;
   margin: 20px 0 5px 0;
 }
 
@@ -231,7 +224,7 @@ section p,
   height: inherit;
   display: grid;
   background-color: #ebebff;
-  color: #6070ff;
+  color: #3D51FF;
   border-radius: 8px;
   align-items: center;
   text-align: center;
@@ -243,9 +236,8 @@ section p,
 }
 
 button {
-  padding: 10px;
+  padding: 0 10px;
   height: 48px;
-  max-width: 162px;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   box-sizing: border-box;
@@ -263,7 +255,7 @@ button {
 }
 
 input[type="submit"] {
-  width: 30%;
+  width: auto;
   background-color: white;
   color: #6070ff;
   font-size: 17px;
@@ -360,7 +352,7 @@ input[type="submit"]:active {
 .contact {
   padding: 20px;
   padding-top: 80px;
-  background-color: #6070ff;
+  background-color: #3D51FF;
   background-image: url("../images/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
