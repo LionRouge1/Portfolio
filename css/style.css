@@ -224,7 +224,7 @@ section p,
   height: inherit;
   display: grid;
   background-color: #ebebff;
-  color: #3D51FF;
+  color: #3d51ff;
   border-radius: 8px;
   align-items: center;
   text-align: center;
@@ -352,7 +352,7 @@ input[type="submit"]:active {
 .contact {
   padding: 20px;
   padding-top: 80px;
-  background-color: #3D51FF;
+  background-color: #3d51ff;
   background-image: url("../images/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
