@@ -90,14 +90,12 @@ section {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 20px;
   cursor: pointer;
-
   color: #6070ff;
   font-size: 24px;
 }
-
 
 .about {
   background-color: white;
