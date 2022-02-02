@@ -73,9 +73,10 @@ nav > ul {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #6070ffe0;
+  background-color: #3f52f9bf;
   padding-top: 50px;
   display: none;
+  backdrop-filter: blur(7px);
 }
 
 .menu li {
@@ -121,13 +122,49 @@ nav > ul {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 700px;
-  background-color: tomato;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  background-color: #ebecf094;
   display: none;
+}
+
+.popupCont {
+  width: 90%;
+  margin: 5px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.popuptitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupCont > img {
+  width: 100%;
+  height: 220px;
+}
+
+.popupbody > .text {
+  display: block;
+  height: 220px;
+  overflow-y: auto;
+}
+
+.btnbox {
+  width: 100%;
+  margin: 20px auto;
+  border-top: 1px solid #EBECF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -21px;
 }
 
 .snap_container {
@@ -204,7 +241,7 @@ section p,
   height: 100%;
 }
 
-.snapshoot > .Dtop {
+.Dtop {
   display: none;
 }
 
