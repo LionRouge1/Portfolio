@@ -104,6 +104,38 @@
     line-height: 20px;
   }
 
+  .popupCont > .frame {
+    height: 40px;
+    margin: 0;
+  }
+
+  .popupCont > img {
+    height: 400px;
+  }
+
+  .popupbody {
+    display: grid;
+    grid-template-columns: 60% 35%;
+  }
+
+  .popupbody > .text {
+    height: inherit;
+    overflow-y: none;
+  }
+
+  .popupbody .lang {
+    width: 100%;
+  }
+
+  .btnbox {
+    margin: 10px auto;
+    height: 80px;
+  }
+
+  .btnbox > button {
+    height: 40px;
+  } 
+
   .about {
     background-image: url('../images/header_bg.svg');
     width: 100%;
@@ -182,11 +214,11 @@
     order: 2;
   }
 
-  .snapshoot > .phone {
+  .phone {
     display: none;
   }
 
-  .snapshoot > .Dtop {
+  .Dtop {
     display: block;
     transition: transform 0.3s ease-in-out;
   }
