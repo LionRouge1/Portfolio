@@ -104,11 +104,6 @@
     line-height: 20px;
   }
 
-  .popupCont > .frame {
-    height: 40px;
-    margin: 0;
-  }
-
   .popupCont > img {
     height: 400px;
   }
@@ -120,21 +115,8 @@
 
   .popupbody > .text {
     height: inherit;
-    overflow-y: none;
+    overflow-y: inherit;
   }
-
-  .popupbody .lang {
-    width: 100%;
-  }
-
-  .btnbox {
-    margin: 10px auto;
-    height: 80px;
-  }
-
-  .btnbox > button {
-    height: 40px;
-  } 
 
   .about {
     background-image: url('../images/header_bg.svg');
@@ -190,6 +172,16 @@
 
   .frame > h3 {
     font-weight: 500;
+  }
+
+  .popupCont > .frame {
+    height: 40px;
+    margin: 0;
+  }
+
+  .btnbox {
+    margin: 10px auto;
+    height: 80px;
   }
 
   .Fabout {
@@ -249,8 +241,16 @@
     display: grid;
   }
 
+  .popupbody .lang {
+    width: 100%;
+  }
+
   button {
     margin: 44px 0;
+  }
+
+  .btnbox > button {
+    height: 40px;
   }
 
   .toggle {
