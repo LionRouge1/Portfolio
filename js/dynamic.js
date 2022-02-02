@@ -23,15 +23,6 @@ function displayNav() {
   }
 
   menu.classList.toggle('menu');
-  /*if (togmenu.style.display === "none") {
-    togmenu.style.display = "block";
-    humburgerNav.style.color = "white";
-    humburgerNav.innerHTML = '<i class="fas fa-times"></i>';
-  } else {
-    togmenu.style.display = "none";
-    humburgerNav.style.color = "#6070ff";
-    humburgerNav.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
-  }*/
 }
 
 humburgerNav.addEventListener("click", displayNav);
