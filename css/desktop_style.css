@@ -105,7 +105,12 @@
   }
 
   .popupCont > img {
-    height: 400px;
+    height: 440px;
+    margin-top: 0;
+  }
+
+  .popupCont {
+    width: 80%;
   }
 
   .popupbody {
