@@ -177,3 +177,53 @@ const pro = document.querySelectorAll('.left_block > button');
 for (let i = 0; i < pro.length; i++){
   pro[i].addEventListener('click', WindowPopup.bind(null, projects[i]),false);
 }
+
+const sectionCard = document.querySelector('.snap_container');
+
+const cardArticle = `
+<article>
+          <div class="snapshoot ord1">
+            <img
+              class="phone"
+              src="${projects[0].featured_image[0]}"
+              alt="A card about availability(mobile version)"
+            />
+            <img
+              class="Dtop"
+              src="${projects[0].featured_image[1]}"
+              alt="A card about availability(desktop version)"
+            />
+          </div>
+          <div class="left_block">
+            <h2>${projects[0].name[0]}</h2>
+            <div class="frame">
+              <h3>${projects[0].name[1]}</h3>
+              <div></div>
+              <p>${projects[0].name[2]}</p>
+              <div></div>
+              <p>${projects[0].name[3]}</p>
+            </div>
+            <p class="text">
+            ${projects[0].description}
+            </p>
+            <ul class="lang">
+              ${makeList(projects[0].technologie)[0]}
+              ${makeList(projects[0].technologie)[1]}
+              ${makeList(projects[0].technologie)[2]}
+            </ul>
+            <button class="btn" onclick="WindowPopup(projects[0])" type="button">See Project</button>
+
+          </div>
+        </article>
+
+
+`
+function makeList(arr){
+  return arr.map((itm)=>{
+return `<li>${itm}</li>`
+  })
+}
+
+
+
+sectionCard.insertAdjacentHTML('afterbegin',cardArticle);
