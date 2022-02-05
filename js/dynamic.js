@@ -30,31 +30,29 @@ humburgerNav.addEventListener("click", displayNav);
 
 //data storage in the browser
 
-const btn = document.getElementById("submitBtn");
 const body = document.getElementsByTagName('body')[0];
+const input = document.querySelectorAll('form input, form textarea');
 
-console.log(localStorage.user);
-btn.addEventListener("click", processData);
-function processData() {
+
+function changed(){
   const names = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const mess = document.getElementById("message").value;
+
   const User = {
-    name: names,
-    mail: email,
-    message: mess,
+    'name' : names,
+    'mail' : email,
+    'message' : mess
   };
+
   let storeUser = JSON.stringify(User);
-  if(localStorage.user!== undefined){
-    if(localStorage.user !== storeUser){
-      localStorage.setItem('user',storeUser);
-    }
-  } else{
-    localStorage.setItem('user',storeUser);
-  }
+  localStorage.setItem('user',storeUser);
 }
 
-body.addEventListener("load", pageload);
+input.forEach(element => {
+  element.addEventListener('change', changed)
+});
+
 function pageload(){
   if(localStorage.user !== undefined){
     const textJ=localStorage.user;
