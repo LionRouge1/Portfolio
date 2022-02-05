@@ -157,6 +157,8 @@ nav > ul {
   height: 100vh;
   backdrop-filter: blur(7px);
   background-color: #ebecf094;
+  overflow-y: auto;
+  z-index: 100;
 }
 
 .popupCont {
