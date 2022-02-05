@@ -503,3 +503,12 @@ textarea {
   margin: auto;
   border-radius: 50px;
 }
+
+#erroMessage {
+  color: #dc1515cf;
+  background-color: #ffffff40;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 12px;
+  margin: 5px;
+}

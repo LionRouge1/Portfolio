@@ -228,13 +228,13 @@ sectionCard.insertAdjacentHTML("afterbegin", cardArticle);
 
 // form validation
 const submitBtn = document.getElementById("submitBtn");
-console.log(submitBtn);
+const erroMessage = document.getElementById('erroMessage');
 function validator(e) {
   const formValue = document.getElementById("email").value;
-  if (formValue === formValue.toLowerCase()) {
-    console.log(formValue,e);
-  } else {
+  if ((formValue == formValue.toLowerCase()) == false) {
     e.preventDefault();
+    erroMessage.innerHTML = '<strong>Invalid email !!</strong> Email should be in lower case';
+    erroMessage.style.color = 'red';
   }
 }
 
