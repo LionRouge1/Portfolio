@@ -221,9 +221,24 @@ for (let x = 0; x < projects.length; x++){
 `
   const sectionCard = document.querySelector('.snap_container');
   sectionCard.insertAdjacentHTML('beforeend',cardArticle);
+
 }
 
 const pro = document.querySelectorAll('.left_block > .btn');
 for (let i = 0; i < pro.length; i++){
   pro[i].addEventListener('click', WindowPopup.bind(null, projects[i]),false);
 }
+
+// form validation
+const submitBtn = document.getElementById("submitBtn");
+const erroMessage = document.getElementById('erroMessage');
+function validator(e) {
+  const formValue = document.getElementById("email").value;
+  if ((formValue == formValue.toLowerCase()) == false) {
+    e.preventDefault();
+    erroMessage.innerHTML = '<strong>Invalid email !!</strong> Email should be in lower case';
+  }
+}
+
+submitBtn.addEventListener("click", validator);
+
