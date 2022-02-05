@@ -238,7 +238,6 @@ function validator(e) {
   if ((formValue == formValue.toLowerCase()) == false) {
     e.preventDefault();
     erroMessage.innerHTML = '<strong>Invalid email !!</strong> Email should be in lower case';
-    erroMessage.style.color = 'red';
   }
 }
 
