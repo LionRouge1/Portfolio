@@ -104,6 +104,25 @@
     line-height: 20px;
   }
 
+  .popupCont > img {
+    height: 440px;
+    margin-top: 0;
+  }
+
+  .popupCont {
+    width: 80%;
+  }
+
+  .popupbody {
+    display: grid;
+    grid-template-columns: 60% 35%;
+  }
+
+  .popupbody > .text {
+    height: inherit;
+    overflow-y: inherit;
+  }
+
   .about {
     background-image: url('../images/header_bg.svg');
     width: 100%;
@@ -160,6 +179,16 @@
     font-weight: 500;
   }
 
+  .popupCont > .frame {
+    height: 40px;
+    margin: 0;
+  }
+
+  .btnbox {
+    margin: 10px auto;
+    height: 80px;
+  }
+
   .Fabout {
     width: 100%;
     display: grid;
@@ -182,11 +211,11 @@
     order: 2;
   }
 
-  .snapshoot > .phone {
+  .phone {
     display: none;
   }
 
-  .snapshoot > .Dtop {
+  .Dtop {
     display: block;
     transition: transform 0.3s ease-in-out;
   }
@@ -217,8 +246,16 @@
     display: grid;
   }
 
+  .popupbody .lang {
+    width: 100%;
+  }
+
   button {
     margin: 44px 0;
+  }
+
+  .btnbox > button {
+    height: 40px;
   }
 
   .toggle {
