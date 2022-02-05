@@ -28,16 +28,38 @@ function displayNav() {
 humburgerNav.addEventListener("click", displayNav);
 
 //data storage in the browser
-const names = document.getElementById("name").value;
-const email = document.getElementById("mail").value;
-const mess = document.getElementById("message").value;
-const btn = document.getElementById("submitBtn").value;
 
-const User = {
-  name: names,
-  mail: email,
-  message: mess,
-};
+const btn = document.getElementById("submitBtn");
+const body = document.getElementsByTagName('body')[0];
 
+console.log(localStorage.user);
 btn.addEventListener("click", processData);
-function processData() {}
+function processData() {
+  const names = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mess = document.getElementById("message").value;
+  const User = {
+    name: names,
+    mail: email,
+    message: mess,
+  };
+  let storeUser = JSON.stringify(User);
+  if(localStorage.user!== undefined){
+    if(localStorage.user !== storeUser){
+      localStorage.setItem('user',storeUser);
+    }
+  } else{
+    localStorage.setItem('user',storeUser);
+  }
+}
+
+body.addEventListener("load", pageload);
+function pageload(){
+  if(localStorage.user !== undefined){
+    const textJ=localStorage.user;
+    const objJ = JSON.parse(textJ);
+    document.getElementById("name").value = objJ.name;
+    document.getElementById("email").value = objJ.mail;
+    document.getElementById("message").value = objJ.message;
+  }
+}
