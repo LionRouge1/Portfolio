@@ -18,16 +18,52 @@ function displayNav() {
     humburgerNav.style.color = "#6070ff";
     humburgerNav.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
   } else {
-    menu.style.display = 'block';
+    menu.style.display = "block";
     humburgerNav.style.color = "white";
     humburgerNav.innerHTML = '<i class="fas fa-times"></i>';
   }
 
-  menu.classList.toggle('menu');
+  menu.classList.toggle("menu");
 }
 
 humburgerNav.addEventListener("click", displayNav);
 
+//data storage in the browser
+
+const body = document.getElementsByTagName('body')[0];
+const input = document.querySelectorAll('form input, form textarea');
+
+
+function changed(){
+  const names = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mess = document.getElementById("message").value;
+
+  const User = {
+    'name' : names,
+    'mail' : email,
+    'message' : mess
+  };
+
+  let storeUser = JSON.stringify(User);
+  localStorage.setItem('user',storeUser);
+}
+
+input.forEach(element => {
+  element.addEventListener('change', changed)
+});
+
+function pageload(){
+  if(localStorage.user !== undefined){
+    const textJ=localStorage.user;
+    const objJ = JSON.parse(textJ);
+    document.getElementById("name").value = objJ.name;
+    document.getElementById("email").value = objJ.mail;
+    document.getElementById("message").value = objJ.message;
+  }
+}
+
+body.addEventListener('load', pageload);
 
 // Detail popup windows 
 
@@ -241,4 +277,3 @@ function validator(e) {
 }
 
 submitBtn.addEventListener("click", validator);
-
