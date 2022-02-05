@@ -224,7 +224,6 @@ for (let x = 0; x < projects.length; x++){
 }
 
 const pro = document.querySelectorAll('.left_block > .btn');
-console.log(pro);
 for (let i = 0; i < pro.length; i++){
   pro[i].addEventListener('click', WindowPopup.bind(null, projects[i]),false);
 }
