@@ -63,6 +63,8 @@ function pageload(){
   }
 }
 
+body.addEventListener('load', pageload);
+
 // Detail popup windows 
 
 const projects = [
