@@ -172,58 +172,59 @@ popclose.addEventListener('click',()=> {
 });
 }
 
-const pro = document.querySelectorAll('.left_block > button');
-
-for (let i = 0; i < pro.length; i++){
-  pro[i].addEventListener('click', WindowPopup.bind(null, projects[i]),false);
+function makeList(arr){
+  let obList = ''
+  for(let n = 0; n < arr.length; n++){
+    if(arr[n]== 'Ruby on rails'){
+      obList += `<li class='ruby'>${arr[n]}</li>`;
+    }else {
+    obList += `<li>${arr[n]}</li>`;
+    }
+  }
+  return obList;
 }
 
-const sectionCard = document.querySelector('.snap_container');
-
-const cardArticle = `
+for (let x = 0; x < projects.length; x++){
+  let ord = ((x+1)%2==0)? 'ord1':'';
+  const cardArticle = `
 <article>
-          <div class="snapshoot ord1">
+          <div class="snapshoot ${ord}">
             <img
               class="phone"
-              src="${projects[0].featured_image[0]}"
-              alt="A card about availability(mobile version)"
+              src="${projects[x].featured_image[0]}"
+              alt="Project card(mobile version)"
             />
             <img
               class="Dtop"
-              src="${projects[0].featured_image[1]}"
-              alt="A card about availability(desktop version)"
+              src="${projects[x].featured_image[1]}"
+              alt="Project card(desktop version)"
             />
           </div>
           <div class="left_block">
-            <h2>${projects[0].name[0]}</h2>
+            <h2>${projects[x].name[0]}</h2>
             <div class="frame">
-              <h3>${projects[0].name[1]}</h3>
+              <h3>${projects[x].name[1]}</h3>
               <div></div>
-              <p>${projects[0].name[2]}</p>
+              <p>${projects[x].name[2]}</p>
               <div></div>
-              <p>${projects[0].name[3]}</p>
+              <p>${projects[x].name[3]}</p>
             </div>
             <p class="text">
-            ${projects[0].description}
+            ${projects[x].description}
             </p>
             <ul class="lang">
-              ${makeList(projects[0].technologie)[0]}
-              ${makeList(projects[0].technologie)[1]}
-              ${makeList(projects[0].technologie)[2]}
+              ${makeList(projects[x].technologie)}
             </ul>
-            <button class="btn" onclick="WindowPopup(projects[0])" type="button">See Project</button>
-
+            <button class="btn" type="button">See Project</button>
           </div>
         </article>
-
-
 `
-function makeList(arr){
-  return arr.map((itm)=>{
-return `<li>${itm}</li>`
-  })
+  const sectionCard = document.querySelector('.snap_container');
+  sectionCard.insertAdjacentHTML('beforeend',cardArticle);
 }
 
-
-
-sectionCard.insertAdjacentHTML('afterbegin',cardArticle);
+const pro = document.querySelectorAll('.left_block > .btn');
+console.log(pro);
+for (let i = 0; i < pro.length; i++){
+  pro[i].addEventListener('click', WindowPopup.bind(null, projects[i]),false);
+}
