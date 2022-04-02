@@ -69,11 +69,11 @@ body.addEventListener('load', pageload);
 
 const projects = [
   {
-    'name' : ['Tonic','CANOPY','Back End Dev','2015'],
-    'description' : 'A daily selection of privately personalized reads; no accounts or sign-ups required.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates adipisci nobis. Adipisci blanditiis nesciunt hic modi quas quos recusandae cum ab officia iusto non ratione consequatur natus, illum assumenda.',
-    'featured_image' : ['images/Snapshoot.png','images/Dtop_snapshoot2.png'],
+    'name' : ['To do list','CANOPY','Back End Dev','2022'],
+    'description' : '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Built with Html, CSS and JavaScript.',
+    'featured_image' : ['images/todolistMb.png','images/todolist.png'],
     'technologie' : ['html','css','javaScript'],
-    'link' : ['link-to-live-version','link-to-source-version']
+    'link' : ['https://lionrouge1.github.io/To_do_list/','https://github.com/LionRouge1/To_do_list']
   },
   {
     'name' : ['Multi-Post Stories','FACEBOOK','Full Stack Dev','2015'],
@@ -187,6 +187,7 @@ cardre.appendChild(btnbox);
 
 const btnLive = document.createElement('a');
 btnLive.setAttribute('type', 'button');
+btnLive.setAttribute('target', '_blank');
 btnLive.href = project.link[0];
 btnLive.classList.add('btn');
 btnbox.appendChild(btnLive);
@@ -194,6 +195,7 @@ btnLive.innerHTML = 'See live <i class="fas fa-external-link-alt"></i>';
 
 const btnSource = document.createElement('a');
 btnSource.setAttribute('tupe', 'button');
+btnSource.setAttribute('target', '_blank');
 btnSource.href = project.link[1];
 btnSource.classList.add('btn');
 btnbox.appendChild(btnSource);
