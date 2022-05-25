@@ -289,8 +289,13 @@ section p,
   display: none;
 }
 
+.Dtops {
+  display: none;
+}
+
 .frame {
-  width: 236px;
+  min-width: 236px;
+  max-width: 280px;
   height: inherit;
   min-height: 32px;
   display: grid;
@@ -326,7 +331,7 @@ section p,
 }
 
 .lang {
-  width: 203px;
+  min-width: 203px;
   height: inherit;
   min-height: 24px;
   margin: 20px 0 5px 0;

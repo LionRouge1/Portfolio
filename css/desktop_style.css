@@ -176,7 +176,8 @@
   }
 
   .frame {
-    min-width: 350px;
+    min-width: 300px;
+    max-width: 350px;
     min-height: 40px;
     grid-template-columns: auto auto auto auto auto;
   }
@@ -230,6 +231,10 @@
   .Dtop {
     display: block;
     transition: transform 0.3s ease-in-out;
+  }
+
+  .Dtops {
+    display: block;
   }
 
   .Dtop:hover {

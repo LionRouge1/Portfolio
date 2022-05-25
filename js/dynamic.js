@@ -78,11 +78,11 @@ const projects = [
     'link': ['https://lionrouge1.github.io/To_do_list/', 'https://github.com/LionRouge1/To_do_list']
   },
   {
-    'name': ['Multi-Post Stories', 'FACEBOOK', 'Full Stack Dev', '2015'],
-    'description': 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates adipisci nobis. Adipisci blanditiis nesciunt hic modi quas quos recusandae cum ab officia iusto non ratione consequatur natus, illum assumenda.',
-    'featured_image': ['images/Snapshoot1.png', 'images/Dtop_snapshoot3.png'],
-    'technologie': ['html', 'css', 'Ruby on rails', 'javaScript'],
-    'link': ['link-to-live-version', 'link-to-source-version']
+    'name': ['Currency Rate', 'SELF-EMPLOYED', 'Full Stack Dev', '2022'],
+    'description': ' CURRENCY RATE is web site that help:<br>- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
+    'featured_image': ['images/exchangeMb.png', 'images/exchange.png'],
+    'technologie': ['html', 'css', 'React', 'Redux'],
+    'link': ['https://currencyrates1.netlify.app/', 'https://github.com/LionRouge1/Currency_Exchange.git']
   },
   {
     'name': ['Facebook 360', 'FACEBOOK', 'Full Stack Dev', '2015'],
