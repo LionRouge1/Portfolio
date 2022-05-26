@@ -18,7 +18,7 @@ function displayNav() {
 
 humburgerNav.addEventListener("click", displayNav);
 
-if(window.innerWidth < 992 ) {
+if (window.innerWidth < 992) {
   menulist.forEach((element) => {
     element.addEventListener("click", () => {
       menu.style.display = "none";
@@ -27,7 +27,7 @@ if(window.innerWidth < 992 ) {
       menu.classList.toggle('menu');
     });
   });
-  
+
 }
 
 //data storage in the browser
@@ -71,7 +71,7 @@ body.addEventListener('load', pageload);
 
 const projects = [
   {
-    'name': ['To do list', 'CANOPY', 'Frond End Dev', '2022'],
+    'name': ['To do list', 'CANOPY', 'Front End Dev', '2022'],
     'description': '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Built with Html, CSS and JavaScript.',
     'featured_image': ['images/todolistMb.png', 'images/todolist.png'],
     'technologie': ['html', 'css', 'javaScript'],
@@ -321,7 +321,7 @@ const frameworks = [
 
 const frames = document.querySelector('.frames');
 
-frameworks.forEach(({name, image}) => {
+frameworks.forEach(({ name, image }) => {
   const fram = `
   <li class="fram">
     <img class="fram-image" src="${image}" alt="${name}" title="${name}"/>
@@ -358,20 +358,17 @@ listSkill(professional, skills.professional);
 
 const arrows = document.querySelectorAll('.lan-tle > i');
 const hideToggle = (item) => {
-  const parent = item.parentNode.parentNode;
-  const toggle = parent.querySelector('.toggle');
-  if(toggle.style.display === 'none') {
 
-    item.classList.remove('fa-angle-right');
-    item.classList.add('fa-angle-down');
-    toggle.style.display = 'block';
-    parent.querySelector('.lan-tle').style.borderBottom = 'none';
-  }else {
+  const parent = item.parentNode.parentNode;
+  console.log(parent.className);
+  if (parent.className) {
     item.classList.remove('fa-angle-down');
     item.classList.add('fa-angle-right');
-    toggle.style.display = 'none';
-    parent.querySelector('.lan-tle').style.borderBottom = '2px solid #f7f7f9';
+  } else {
+    item.classList.remove('fa-angle-right');
+    item.classList.add('fa-angle-down');
   }
+  parent.classList.toggle('box');
 };
 
 arrows.forEach((element) => {

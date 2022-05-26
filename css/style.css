@@ -482,12 +482,11 @@ input[type="submit"]:active {
   margin: 6px 10px;
 }
 
-.tags {
+.box > div {
   border-bottom: none;
 }
 
-.langs,
-.skills {
+.box > ul {
   display: block;
 }
 
