@@ -165,13 +165,7 @@
     display: flex;
   }
 
-  .left_block {
-    margin: 20px 40px;
-    width: 544px;
-  }
-
   .Fabout > .left_block {
-    width: 447px;
     margin: 0;
   }
 
@@ -207,7 +201,7 @@
     width: 100%;
     display: grid;
     padding: 142px;
-    grid-template-columns: 447px auto;
+    grid-template-columns: 40% 60%;
     grid-column-gap: 20px;
   }
 
