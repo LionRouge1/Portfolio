@@ -165,8 +165,9 @@
     display: flex;
   }
 
-  .Fabout > .left_block {
-    margin: 0;
+  .left_block {
+    margin: 20px 40px;
+    width: 544px;
   }
 
   .frame {
