@@ -253,6 +253,7 @@ section p,
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
+  text-align: justify;
 }
 
 .social_media {
@@ -278,11 +279,19 @@ section p,
   width: inherit;
   height: 220px;
   display: block;
+  opacity: 0;
+  transition: opacity 5s;
 }
 
 .snapshoot > img {
   width: 100%;
   height: 100%;
+}
+
+article > .left_block {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform 2s, opacity 4s;
 }
 
 .Dtop {
@@ -551,6 +560,27 @@ input[type="submit"]:active {
   border: none;
   border-radius: 0 70px 0 0;
 }
+
+#cursor {
+  opacity: 0;
+  font-weight: 100;
+  animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+/* @keyframes blink {
+  from { visibility: hidden;}
+  to { visibility: visible;}
+} */
+
+
 
 .contact {
   padding: 20px;
