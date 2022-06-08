@@ -360,7 +360,6 @@ const arrows = document.querySelectorAll('.lan-tle > i');
 const hideToggle = (item) => {
 
   const parent = item.parentNode.parentNode;
-  console.log(parent.className);
   if (parent.className) {
     item.classList.remove('fa-angle-down');
     item.classList.add('fa-angle-right');
