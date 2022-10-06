@@ -293,8 +293,8 @@ const languages = [
     image: 'images/python.png',
   },
   {
-    name: 'Ruby on rails',
-    image: 'images/rubyRail.png',
+    name: 'Ruby',
+    image: 'images/ruby.png',
   }
 ];
 
@@ -314,9 +314,10 @@ languages.forEach(({ name, image }) => {
 
 const frameworks = [
   { name: 'React', image: 'images/react.png' },
-  { name: 'Nodejs', image: 'images/nodejs.png' },
+  { name: 'Redux', image: 'images/redux.png' },
   { name: 'Bootstrap', image: 'images/bootstrap.png' },
-  { name: 'Sass', image: 'images/sass.png' }
+  { name: 'Ruby on rails', image: 'images/rubyRails.png' },
+  { name: 'Laravel', image: 'images/laravel.png' }
 ];
 
 const frames = document.querySelector('.frames');
