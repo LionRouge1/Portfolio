@@ -1,6 +1,6 @@
 const left_blocks = document.querySelectorAll('article > .left_block');
 const snapshoots = document.querySelectorAll('article > .snapshoot');
-const txt = 'I\’m Matchoudi Glad to see you!';
+const txt = 'I’m Matchoudi Glad to see you!';
 document.querySelector('.aboutText').textContent = '';
 console.log(txt);
 
