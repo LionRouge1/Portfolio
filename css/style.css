@@ -578,16 +578,14 @@ input[type="submit"]:active {
 }
 
 @keyframes blink {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* @keyframes blink {
   from { visibility: hidden;}
   to { visibility: visible;}
 } */
-
-
 
 .contact {
   padding: 20px;
