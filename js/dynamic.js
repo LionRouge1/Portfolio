@@ -78,18 +78,18 @@ const projects = [
     'link': ['https://lionrouge1.github.io/To_do_list/', 'https://github.com/LionRouge1/To_do_list']
   },
   {
-    'name': ['Currency Rate', 'SELF-EMPLOYED', 'Full Stack Dev', '2022'],
+    'name': ['Currency Rate', 'SELF-EMPLOYED', 'Front End Dev', '2022'],
     'description': ' CURRENCY RATE is web site that help:<br>- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
     'featured_image': ['images/exchangeMb.png', 'images/exchange.png'],
     'technologie': ['html', 'css', 'React', 'Redux'],
     'link': ['https://currencyrates1.netlify.app/', 'https://github.com/LionRouge1/Currency_Exchange.git']
   },
   {
-    'name': ['Facebook 360', 'FACEBOOK', 'Full Stack Dev', '2015'],
-    'description': 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates adipisci nobis. Adipisci blanditiis nesciunt hic modi quas quos recusandae cum ab officia iusto non ratione consequatur natus, illum assumenda.',
-    'featured_image': ['images/Snapshoot2.png', 'images/Dtop_snapshoot.png'],
+    'name': ['Budget App', 'SELF-EMPLOYED', 'Back End Dev', '2022'],
+    'description': 'BudgetApp is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    'featured_image': ['images/budgetcategorieMb.png', 'images/budgetcategorie.png'],
     'technologie': ['html', 'css', 'Ruby on rails', 'javaScript'],
-    'link': ['https//link-to-live-version', 'https//link-to-source-version']
+    'link': ['https://budgetapplion.herokuapp.com/', 'https//link-to-source-version']
   },
   {
     'name': ['Uber Navigation', 'Uber', 'Lead Developer', '2018'],
