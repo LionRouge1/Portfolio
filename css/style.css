@@ -64,7 +64,8 @@ section {
   text-decoration: none;
 }
 
-.btnbox > a {
+.btnbox > a,
+.resume {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -370,6 +371,10 @@ button,
   transition: all 1s;
 }
 
+.resume {
+  width: 200px;
+}
+
 input[type="submit"] {
   width: auto;
   background-color: white;
@@ -381,6 +386,7 @@ input[type="submit"] {
 }
 
 button:hover,
+.resume:hover,
 input[type="submit"]:hover {
   background-color: #6070ff;
   color: white;
@@ -394,6 +400,7 @@ input[type="submit"]:disabled {
 }
 
 button:active,
+.resume:active,
 input[type="submit"]:active {
   background-color: #2230d2;
   box-shadow: none;
