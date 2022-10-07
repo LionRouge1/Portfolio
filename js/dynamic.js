@@ -88,15 +88,15 @@ const projects = [
     'name': ['Budget App', 'SELF-EMPLOYED', 'Back End Dev', '2022'],
     'description': 'BudgetApp is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     'featured_image': ['images/budgetcategorieMb.png', 'images/budgetcategorie.png'],
-    'technologie': ['html', 'css', 'Ruby on rails', 'javaScript'],
+    'technologie': ['html', 'css', 'Ruby on rails'],
     'link': ['https://budgetapplion.herokuapp.com/', 'https//link-to-source-version']
   },
   {
-    'name': ['Uber Navigation', 'Uber', 'Lead Developer', '2018'],
+    'name': ['School Management', 'Stephen', 'Back End Dev', '2022'],
     'description': 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates adipisci nobis. Adipisci blanditiis nesciunt hic modi quas quos recusandae cum ab officia iusto non ratione consequatur natus, illum assumenda.',
-    'featured_image': ['images/Snapshoot3.png', 'images/Dtop_snapshoot1.png'],
-    'technologie': ['html', 'css', 'Ruby on rails', 'javaScript'],
-    'link': ['https//link-to-live-version', 'https//link-to-source-version']
+    'featured_image': ['images/schoolManagement.png', 'images/schoolManagement.png'],
+    'technologie': ['html', 'css', 'PHP', 'javaScript'],
+    'link': ['https://github.com/LionRouge1/schoolManagement', '']
   }
 ]
 
