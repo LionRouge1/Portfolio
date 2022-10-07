@@ -71,17 +71,17 @@ body.addEventListener('load', pageload);
 
 const projects = [
   {
-    'name': ['To do list', 'CANOPY', 'Front End Dev', '2022'],
-    'description': '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Built with Html, CSS and JavaScript.',
-    'featured_image': ['images/todolistMb.png', 'images/todolist.png'],
-    'technologie': ['html', 'css', 'javaScript'],
-    'link': ['https://lionrouge1.github.io/To_do_list/', 'https://github.com/LionRouge1/To_do_list']
+    'name': ['Doctor Appointment', 'CANOPY', 'Full Stack Dev', '2022'],
+    'description': 'Book Appoinments is an application for doctor book appoinemnts. This applications is responsive and users can load, create, and delete doctors and reservations. Users need to sign up or sign in to access application. They can sign up or sign in using the sign up and login forms.',
+    'featured_image': ['images/doctorAppointmentfrondend.png', 'images/appointmentfrondend.png'],
+    'technologie': ['React', 'Redux', 'Ruby on Rails'],
+    'link': ['https://doctor-appointment-frontend.netlify.app/', 'https://github.com/MaganaAsiati/doctor_appointment_backend']
   },
   {
     'name': ['Currency Rate', 'SELF-EMPLOYED', 'Front End Dev', '2022'],
     'description': ' CURRENCY RATE is web site that help:<br>- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
     'featured_image': ['images/exchangeMb.png', 'images/exchange.png'],
-    'technologie': ['html', 'css', 'React', 'Redux'],
+    'technologie': ['React', 'Redux'],
     'link': ['https://currencyrates1.netlify.app/', 'https://github.com/LionRouge1/Currency_Exchange.git']
   },
   {
@@ -92,7 +92,7 @@ const projects = [
     'link': ['https://budgetapplion.herokuapp.com/', 'https//link-to-source-version']
   },
   {
-    'name': ['School Management', 'Stephen', 'Back End Dev', '2022'],
+    'name': ['School Management', 'Stephen', 'Full Stack Dev', '2022'],
     'description': 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates adipisci nobis. Adipisci blanditiis nesciunt hic modi quas quos recusandae cum ab officia iusto non ratione consequatur natus, illum assumenda.',
     'featured_image': ['images/schoolManagement.png', 'images/schoolManagement.png'],
     'technologie': ['html', 'css', 'PHP', 'javaScript'],
