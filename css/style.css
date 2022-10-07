@@ -421,7 +421,7 @@ input[type="submit"]:active {
 }
 
 .skills {
-  background-color: rgba(223, 225, 230, 0.5);
+  background-color: rgba(223, 225, 230, 0.308);
   overflow: hidden;
   border: 30px solid transparent;
   border-image:
