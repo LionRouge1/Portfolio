@@ -1,20 +1,22 @@
 const left_blocks = document.querySelectorAll('article > .left_block');
 const snapshoots = document.querySelectorAll('article > .snapshoot');
-const txt = 'I’m Matchoudi Glad to see you!';
-document.querySelector('.aboutText').textContent = '';
-console.log(txt);
+const txt = 'I’m Matchoudi, Glad to see you!';
+const cursor = document.querySelector('.aboutText > span');
+const aboutText = document.querySelector('.aboutText');
 
-let y = 0;
-const typeWriterh1 = () => {
+const typeWriter = (container, curs, text, counter = 0) => {
   let speed = 200;
-  if (y < txt.length) {
-    document.querySelector('.aboutText').textContent += txt.charAt(y);
-    y++;
-    setTimeout(typeWriterh1, speed);
+  if (counter < text.length) {
+    curs.remove();
+    container.textContent += `${text.charAt(counter)}`;
+    container.appendChild(curs);
+    setTimeout(() => { typeWriter(container, curs, text, counter += 1) }, speed);
+  } else {
+    container.innerHTML = (`${text}<span id="cursor">|</span>`);
   }
 }
 
-function getView(a,b = document.querySelector('.aboutText')){
+function getView(callback, b = document.querySelector('.aboutText')) {
   let observerConfg = {
     root: document,
     rootMargin: '-200px',
@@ -27,15 +29,15 @@ function getView(a,b = document.querySelector('.aboutText')){
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
-        a();
+        callback(arguments[1], arguments[2], arguments[3]);
       }
     });
   });
-  
+
   observer.observe(b, observerConfg);
 }
 
-getView(typeWriterh1);
+getView(typeWriter, aboutText, cursor, txt);
 
 let observerConfig = {
   root: document,
@@ -44,11 +46,11 @@ let observerConfig = {
 }
 
 const observerFn = (entries) => {
-entries.forEach((entry) => {
-  if (entry.isIntersecting) {
-    entry.target.style.opacity = 1;
-  }
-})
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+    }
+  })
 };
 
 const observerSnap = new IntersectionObserver(observerFn, observerConfig);

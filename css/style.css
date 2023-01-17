@@ -129,6 +129,11 @@ nav > ul {
   z-index: 0;
 }
 
+.aboutText > span {
+  font-weight: 200;
+  margin: -7px;
+}
+
 .about > img {
   display: none;
 }
@@ -243,7 +248,6 @@ section h1,
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   color: #172b4d;
   margin: 12px 0;
 }
@@ -570,7 +574,8 @@ input[type="submit"]:active {
 
 #cursor {
   opacity: 0;
-  font-weight: 100;
+  font-weight: 200;
+  margin: 0;
   animation: blink 1s infinite;
   -o-animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
