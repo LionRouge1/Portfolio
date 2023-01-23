@@ -1,18 +1,49 @@
 const left_blocks = document.querySelectorAll('article > .left_block');
 const snapshoots = document.querySelectorAll('article > .snapshoot');
 const txt = 'I’m Matchoudi, Glad to see you!';
+const jobs = ['Software Developer', 'Front-end Developer', 'Back-end Developer', 'Full-stack Developer'];
+const jobContener = document.querySelector('.job-container');
 const cursor = document.querySelector('.aboutText > span');
+const jobCursor = document.querySelector('.job-container > span');
 const aboutText = document.querySelector('.aboutText');
 
 const typeWriter = (container, curs, text, counter = 0) => {
   let speed = 200;
   if (counter < text.length) {
     curs.remove();
-    container.textContent += `${text.charAt(counter)}`;
+    container.innerHTML += `${text.charAt(counter)}`;
     container.appendChild(curs);
     setTimeout(() => { typeWriter(container, curs, text, counter += 1) }, speed);
   } else {
     container.innerHTML = (`${text}<span id="cursor">|</span>`);
+  }
+}
+
+const deleteWriter = async (container, curs, text, counter = text.length) => {
+  let speed = 200;
+  container.textContent
+  if (counter >= 0) {
+    curs.remove();
+    container.innerHTML = text.substring(0, counter);
+    container.appendChild(curs);
+    setTimeout(() => { deleteWriter(container, curs, text, counter -= 1) }, speed);
+  } else {
+    container.innerHTML = ''
+  }
+}
+
+const visVersa = async () => {
+  for (let job of jobs) {
+    let position = jobs[jobs.indexOf(job) - 1] || job
+    await new Promise((resolve) => setTimeout(resolve, 200 * txt.length));
+    console.log(jobContener.textContent.slice(0, -1), position);
+    if (jobContener.textContent.slice(0, -1) === position) {
+      deleteWriter(jobContener, jobCursor, job)
+      await new Promise(resolve => setTimeout(resolve, 200));
+    } else {
+      if (jobContener.textContent.length === 0) typeWriter(jobContener, jobCursor, job);
+      await new Promise((resolve) => { setTimeout(resolve), 8000 });
+    }
   }
 }
 
@@ -29,7 +60,7 @@ function getView(callback, b = document.querySelector('.aboutText')) {
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
-        callback(arguments[1], arguments[2], arguments[3]);
+        callback();
       }
     });
   });
@@ -37,7 +68,10 @@ function getView(callback, b = document.querySelector('.aboutText')) {
   observer.observe(b, observerConfg);
 }
 
-getView(typeWriter, aboutText, cursor, txt);
+console.log(jobContener);
+
+getView(() => { typeWriter(aboutText, cursor, txt) });
+getView(() => { visVersa(jobContener, jobCursor) }, jobContener);
 
 let observerConfig = {
   root: document,
