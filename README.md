@@ -13,7 +13,9 @@ Setup and mobile version skeloton
 
 ## Built With
 
-- Html and css
+- HTML
+- css
+- JavaScript
 
 ## Authors
 - Website: [@My Portfolio](https://lionrouge1.github.io/Portfolio/)
