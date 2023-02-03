@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> One paragraph statement about the project.
+>  My portfolio, Where everyone can see all my projects and the code source. Built with HTML, CSS and JavaScript. 
 
 ![screenshot](images/Screenshot_ps_pr.png)
 
