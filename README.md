@@ -18,14 +18,13 @@ Setup and mobile version skeloton
 - JavaScript
 
 ## Authors
-- Website: [@My Portfolio](https://lionrouge1.github.io/Portfolio/)
 - My portfolio: [@Portfolio](https://lionrouge1.github.io/Portfolio/)
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/LionRouge1)
-- Twitter: [@twitterhandle](https://twitter.com/@Matchoudi1)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Github](https://github.com/LionRouge1)
+- Twitter: [Twitter](https://twitter.com/@Matchoudi1)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/matchoudi)
 
 
 ## 🤝 Contributing
